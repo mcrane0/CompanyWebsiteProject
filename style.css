@@ -1,5 +1,5 @@
 /* import google fonts: source sans pro, zen dots, rubik, courier prime */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&family=Zen+Dots&display=swap');
 
 /* 
 font-family: 'Courier Prime', monospace;
@@ -22,6 +22,7 @@ body {
 
 nav {
     display:flex;
+    justify-content:space-between;
     flex-wrap:wrap;
 
     margin-top:8px;
@@ -41,6 +42,8 @@ nav {
     margin-left: 8px;
     margin-right: 8px;
 
+    width: 280px;
+
     font-size:24px;
     font-family: 'Zen Dots', sans-serif;
 }
@@ -51,12 +54,38 @@ nav {
     width: 72px;
     height: 64px;
 }
-#nav-buttons {
+#nav-links {
     display:flex;
+    justify-content:space-between;
+
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 8px;
     margin-right: 8px;
+}
+#nav-links a {
+    background-image: url("buttons/navbuttonbg.png");
+    background-repeat:no-repeat;
+	background-size: 100% 100%;
+
+    padding: 12px 32px;
+    margin-left:8px;
+    margin-right:8px;
+    border-radius: 10px;
+
+	color: white;
+    font-family: 'Rubik', sans-serif;
+	font-weight:500;
+	text-decoration:none;
+
+    transition-duration: 0.25s;
+}
+#nav-links > *:hover {
+	background-image: url("buttons/navbuttonbg-hover.png");
+	background-size: 100% 100%;
+
+	padding: 12px 38px;
+    font-weight:700;
 }
 
 main {
@@ -88,4 +117,26 @@ main {
 }
 main a {
     color: white;
+}
+
+#about {
+    font-size: 1.25em;
+}
+#about div {
+    margin:20px;
+    text-align: center;
+}
+#about h2 {
+    margin-bottom:20px;
+}
+#about-pictures {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+#about-pictures img {
+    margin:20px;
+
+    width:20%;
+    height:20%;
 }
