@@ -36,16 +36,23 @@ nav {
 #title {
     display:flex;
 }
+#title-a {
+    height: 64px;
+
+    color:black;
+    text-decoration: none;
+}
 #title h1 {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 8px;
     margin-right: 8px;
 
-    width: 280px;
+    width: 290px;
 
     font-size:24px;
     font-family: 'Zen Dots', sans-serif;
+    text-align: left;
 }
 #title img {
     margin-top: auto;
@@ -64,13 +71,14 @@ nav {
     margin-right: 8px;
 }
 #nav-links a {
+    background-color: #ab220d;
     background-image: url("buttons/navbuttonbg.png");
     background-repeat:no-repeat;
 	background-size: 100% 100%;
 
     padding: 12px 32px;
-    margin-left:8px;
-    margin-right:8px;
+    margin-left:5px;
+    margin-right:5px;
     border-radius: 10px;
 
 	color: white;
@@ -81,13 +89,40 @@ nav {
     transition-duration: 0.25s;
 }
 #nav-links > *:hover {
+    background-color: #561106;
 	background-image: url("buttons/navbuttonbg-hover.png");
 	background-size: 100% 100%;
 
 	padding: 12px 38px;
     font-weight:700;
 }
+#nav-links #pressed {
+    background-color: #ffc20f;
+    background-image: url("buttons/navbuttonbg-pressed.png");
 
+    color:black;
+}
+#nav-links #pressed:hover {
+    background-color: #ffc20f;
+    background-image: url("buttons/navbuttonbg-pressed.png");
+    background-size: 100% 100%;
+
+    padding: 12px 32px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin:20px;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin:20px;
+    text-align: center;
+}
+
+/* index.html */
 main {
     position:relative;
     height: calc(75vh - 88px);
@@ -104,7 +139,7 @@ main {
 	background-size:cover;
 
     color:white;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 #main-cover {
     position:absolute;
@@ -139,4 +174,28 @@ main a {
 
     width:20%;
     height:20%;
+}
+
+
+/* tech-tips.html */
+.tip-left, .tip-right {
+    width:80%;
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+
+    font-size: 1.5rem;
+}
+.tip-left p:nth-of-type(odd), .tip-right p:nth-of-type(odd) {
+    font-style: italic;
+}
+.tip-right {
+    text-align:right;
+}
+
+#blue-smoke {
+    color: black;
+    text-decoration: none;
 }
