@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barren County Technology Office">
+    <meta name="author" content="Miles Crane">
+    
+    <script src="https://kit.fontawesome.com/b07acdc91c.js" crossorigin="anonymous"></script> <!-- link to Font Awesome kit -->
+
+    <link rel="stylesheet" href="style.css">
+    <title>Submit a Work Order</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="title-a">
+            <div id="title">
+                <img src="images/BCDeathStar.png" alt="BC" />
+                <h1>Barren County Technology Office</h1>
+            </div>
+        </a>
+        <div id="nav-links">
+            <a href="submit.html" id="pressed"><i class="fa-solid fa-pen-to-square"></i> Submit a Work Order</a>
+            <a href="tech-tips.html"><i class="fa-solid fa-desktop"></i> Tech Tips</a>
+            <a href="about.html"><i class="fa-solid fa-person"></i> About Us</a>
+            <a href="contact.html"><i class="fa-regular fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+    <section>
+        <h1>Submit a Work Order</h1>
+        <form>
+            <fieldset> <legend>Your Information</legend>
+                <label for="submitter-name">Name (Last, First)</label>
+                <input type="text" id="submitter-name" required>
+                <br />
+                <label for="submitter-email">Email Address</label>
+                <input type="email" name="submitter-email" id="submitter-email" required>
+            </fieldset>
+            <br />
+            <fieldset> <legend>Location</legend>
+                <label for="wo-location">Location</label>
+                <select name="wo-location" id="wo-location" required>
+                    <option value="BCHS">BCHS</option>
+                    <option value="ATC">ATC</option>
+                    <option value="BIZ">BIZ</option>
+                    <option value="BCTA">BCTA</option>
+                    <option value="BCMS">BCMS</option>
+                    <option value="AT">AT</option>
+                    <option value="EAST">EAST</option>
+                    <option value="HV">HV</option>
+                    <option value="NJ">NJ</option>
+                    <option value="PC">PC</option>
+                    <option value="RC">RC</option>
+                    <option value="TH">TH</option>
+                    <option value="CSC">CSC</option>
+                    <option value="annex">Annex</option>
+                    <option value="BAVEL">BAVEL</option>
+                    <option value="BOE">BOE</option>
+                    <option value="busGarage">Bus Garage</option>
+                    <option value="TWC">TWC</option>
+                    <option value="other">Other (Please specify in Description)</option>
+                </select>
+                <label for="wo-room-number">Room Number</label>
+                <input type="text" name="wo-room-number" id="wo-room-number" required>
+            </fieldset>
+            <br />
+            <fieldset> <legend>Device</legend>
+                <label for="wo-asset">Asset Tag (Number on burgundy or gold sticker with barcode)</label>
+                <input type="number" name="wo-asset" id="wo-asset" required>
+                <br />
+                <label for="wo-manufacturer">Manufacturer</label>
+                <input type="text" name="wo-manufacturer" id="wo-manufacturer">
+                <br />
+                <label for="wo-model">Model Name/Number</label>
+                <input type="text" name="wo-model" id="wo-model">
+            </fieldset>
+            <br />
+            <fieldset> <legend>Issue</legend>
+                <label for="wo-title">Title</label>
+                <input type="text" name="wo-title" id="wo-title">
+                <br />
+                <label for="wo-description">Description</label>
+                <br />
+                <textarea name="wo-description" id="wo-description" cols="45" rows="10" placeholder="Description (Please be as descriptive of your issue as possible)..."></textarea>
+            </fieldset>
+            <br />
+            <input type="submit" id="submit">
+        </form>
+    </section>
+    <footer>
+        <p><i class="fa-solid fa-phone"></i> 270-659-2875</p>
+        <div>
+            <p>511 Trojan Trail</p>
+            <p>Glasgow, KY 42141</p>
+        </div>
+        <p>Copyright &copy; 2022 Barren County Schools Technology Office</p>
+    </footer>
+</body>
+</html>
