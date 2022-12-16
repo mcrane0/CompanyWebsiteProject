@@ -331,6 +331,11 @@ form {
     form {
         width:90%;
     }
+
+    /* contact.html */
+    #contact div {
+        width:90%;
+    }
 }
 
 @media (orientation: portrait), (max-width: 1293px) {
@@ -400,6 +405,12 @@ form {
     /* submit.html */
     form {
         width:90%;
+    }
+
+    /* contact.html */
+    #contact div {
+        width:90%;
+        font-size: 1.2rem;
     }
 }
 @media (max-width: 565px) {
