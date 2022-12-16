@@ -122,6 +122,15 @@ h1 {
     text-align: center;
 }
 
+footer {
+    padding:40px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #632123;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+
 /* index.html */
 main {
     position:relative;
@@ -133,7 +142,7 @@ main {
     align-items: center;
 
     background-color: gray;
-    background-image: url('images/main-placeholder.jpg');
+    background-image: url('images/main.jpg');
     background-position: center;
 	background-repeat: no-repeat;
 	background-size:cover;
@@ -179,7 +188,7 @@ main a {
 
 /* tech-tips.html */
 .tip-left, .tip-right {
-    width:80%;
+    width:60%;
 
     margin-left:auto;
     margin-right:auto;
@@ -198,4 +207,189 @@ main a {
 #blue-smoke {
     color: black;
     text-decoration: none;
+}
+
+/* about.html */
+#profiles {
+    width:720px;
+
+    margin-left:auto;
+    margin-right:auto;
+
+    display: grid;
+    grid-template-columns: 240px 240px 240px;
+    grid-template-rows: 315px 315px 315px 315px 315px;
+
+    font-size: 1.5rem;
+}
+#profiles img {
+    width:200px;
+    height:200px;
+
+    margin-bottom:20px;
+}
+.profile-kris, .profile-kalei, .profile-cory {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.bio-kris, .bio-kalei, .bio-cory {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.profile-jacob, .profile-steve {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    text-align: right;
+}
+.bio-jacob, .bio-steve {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: right;
+}
+
+.bio-kris, .profile-kris {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin: 20px;
+    margin-bottom:40px;
+}
+.bio-jacob, .profile-jacob {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 20px;
+    margin-bottom:40px;
+}
+.bio-kalei, .profile-kalei {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 20px;
+    margin-bottom:40px;
+}
+.bio-steve, .profile-steve {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin: 20px;
+    margin-bottom:40px;
+}
+.bio-cory, .profile-cory {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin: 20px;
+    margin-bottom:40px;
+}
+
+
+/* media queries */
+
+@media (orientation: portrait) {
+    /* tech-tips.html */
+    .tip-left, .tip-right {
+        width:90%;
+    }
+}
+
+@media (orientation: portrait), (max-width: 1293px) {
+    nav {
+        height:144px;
+    }
+    #title {
+        width:100vw;
+    }
+    #nav-links {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:8px;
+    }
+}
+@media (max-width: 899px) {
+    #nav-links {
+        font-size: 0.8em;
+    }
+    #nav-links a {
+        padding: 10px 26px;
+    }
+    #nav-links > *:hover {
+        padding: 10px 30px;
+    }
+    #nav-links #pressed:hover {
+        padding: 10px 26px;
+    }
+}
+@media (max-width: 735px) {
+    #nav-links {
+        font-size: 0.6em;
+    }
+    #nav-links a {
+        padding: 7px 19px;
+    }
+    #nav-links > *:hover {
+        padding: 7px 23px;
+    }
+    #nav-links #pressed:hover {
+        padding: 7px 19px;
+    }
+
+    /* about.html */
+    #profiles {
+        width:420px;
+
+        margin-left:auto;
+        margin-right:auto;
+
+        display: grid;
+        grid-template-columns: 140px 140px 140px;
+        grid-template-rows: 215px 215px 215px 215px 215px;
+
+        font-size: 1.2rem;
+    }
+    #profiles img {
+        width:100px;
+        height:100px;
+    }
+}
+@media (max-width: 565px) {
+    #nav-links {
+        font-size: 0.4em;
+    }
+    #nav-links a {
+        padding: 5px 13px;
+    }
+    #nav-links > *:hover {
+        padding: 5px 15px;
+    }
+    #nav-links #pressed:hover {
+        padding: 5px 13px;
+    }
+
+    /* about.html */
+    #profiles {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 432px) {
+    #title h1 {
+        font-size:20px;
+    }
+    #nav-links {
+        font-size: 0.38em;
+    }
+    #nav-links a {
+        padding: 4px 9px;
+    }
+    #nav-links > *:hover {
+        padding: 4px 11px;
+    }
+    #nav-links #pressed:hover {
+        padding: 4px 9px;
+    }
+
+    /* about.html */
+    #profiles {
+        width:360px;
+        grid-template-columns: 120px 120px 120px;
+    }
+    #profiles img {
+        width:80px;
+        height:80px;
+    }
 }
