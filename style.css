@@ -289,6 +289,19 @@ form {
     margin-bottom:40px;
 }
 
+/* contact.html */
+#contact div {
+    width:60%;
+
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+    margin-bottom:40px;
+
+    font-size:1.5rem;
+}
+
+
 /* media queries */
 
 @media (orientation: portrait) {
